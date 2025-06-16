@@ -2,7 +2,13 @@ name: SBOM Generation and Scan
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - '**'
+  pull_request:
+    branches:
+      - main
+      - '**'
   workflow_dispatch:  # 👈 Enables manual run
 
 jobs:

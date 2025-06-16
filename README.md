@@ -5,11 +5,12 @@ This repository demonstrates how to integrate Software Bill of Materials (SBOM) 
 ## Project Structure
 
 ```
-myapp/
 ├── Dockerfile
 ├── app.py
 ├── requirements.txt
-└── .github/workflows/sbom.yml
+└── .github/
+    └── workflows/
+        └── sbom.yml
 ```
 
 ## Workflow Overview
@@ -23,7 +24,7 @@ The GitHub Actions workflow (`.github/workflows/sbom.yml`) performs the followin
 
 ## How to Use
 
-1. **Clone this repository** and navigate to the `myapp` directory.
+1. **Clone this repository** and navigate to the project directory.
 2. **Push any change** to trigger the workflow.
 3. **View workflow results** in the GitHub Actions tab, including the generated SBOM and vulnerability scan results.
 
