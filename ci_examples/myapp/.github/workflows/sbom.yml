@@ -1,6 +1,9 @@
 name: SBOM Generation and Scan
 
-on: [push]
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:  # 👈 Enables manual run
 
 jobs:
   build-sbom:
